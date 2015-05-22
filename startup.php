@@ -17,6 +17,6 @@ function startup()
   mysql_select_db($dbName) or die ('no data base'); //выбери базу или умри
 
   //open session
-  session_stat();
+  session_start();
 }
 ?>
