@@ -36,12 +36,11 @@ $messages = get_messages();
 <?php
 // в messages лежал  думерный массив, который вернула функция
 // мы его пробегаем и в $m будет попадать каждое сообщение
-foreach ($messages as $m) {
+foreach ($messages as $m)
   echo '<p>';
   echo '<i>' . $m['dt'] . ' - ' . $m['name'] . '</i><br/>'; // дата, имя
   echo $m['text']; // сообщение
   echo '</p>'
-}
 ?>
 </body>
 </html>
